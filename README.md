@@ -51,3 +51,5 @@ Some ideas for future improvements:
 A live demo and screenshots are included in the hackathon submission.
 
 Built for a hackathon with care and intention.
+
+🔗 Live Demo: https://silent-signal-delta.vercel.app
