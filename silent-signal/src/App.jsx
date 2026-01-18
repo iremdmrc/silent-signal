@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import html2canvas from "html2canvas";
+import "./App.css";
+
 
 const MOODS = [
   { id: "anxious", label: "Anxious", vec: { stress: 0.9, energy: 0.4, warmth: 0.2 } },
@@ -219,8 +221,8 @@ How to respond: ${generated.respond}`;
       }}
     >
       {/* ✅ Single container: header + section + footer are all inside */}
-      <div style={{ width: "100%", maxWidth: 1100 }}>
-        <header
+      <div className="ss-container" style={{ width: "100%", maxWidth: 1100 }}>
+        <header className="ss-header"
           style={{
             display: "flex",
             justifyContent: "space-between",
@@ -236,7 +238,7 @@ How to respond: ${generated.respond}`;
             </p>
           </div>
 
-          <button
+          <button className="ss-generate-btn"
             onClick={onGenerate}
             disabled={autoGenerate}
             style={{
@@ -255,14 +257,7 @@ How to respond: ${generated.respond}`;
           </button>
         </header>
 
-        <section
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 18,
-            alignItems: "stretch",
-          }}
-        >
+        <section className="ss-layout" >
           {/* LEFT SIDE */}
           <div
             style={{
@@ -415,7 +410,7 @@ How to respond: ${generated.respond}`;
                   </div>
                 </div>
 
-                <div style={{ display: "flex", gap: 8, alignItems: "flex-start" }}>
+                <div className="ss-card-actions">
                   <button onClick={copyText} style={miniBtn}>Copy</button>
                   <button onClick={copyShareLink} style={miniBtn}>Share</button>
                   <button onClick={() => downloadCardAsPNG(cardRef.current)} style={miniBtn}>Download</button>
