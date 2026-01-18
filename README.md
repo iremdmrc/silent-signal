@@ -14,6 +14,15 @@ With Silent Signal, users can:
 - See a short, empathy-focused suggestion for how others can respond
 - Share the signal using a link or download it as an image
 
+## Responsive & Mobile Support
+Silent Signal is fully responsive and designed to work smoothly across different screen sizes.
+- The layout automatically adapts to mobile, tablet, and desktop screens
+- On smaller screens, the interface switches to a single-column layout for better readability
+- Buttons, cards, and controls remain accessible and easy to use on touch devices
+- Visual signals scale properly without breaking the design or losing clarity
+
+This ensures that Silent Signal can be used comfortably on phones, laptops, and larger displays without requiring any additional setup.
+
 ## How it was built
 This project was built using:
 - React with Vite
@@ -21,7 +30,7 @@ This project was built using:
 - Client-side visual generation
 - URL-based state sharing for easy sharing
 
-There’s no backend — everything runs directly in the browser.
+There’s no backend, everything runs directly in the browser.
 
 ## Challenges
 One of the biggest challenges was finding a balance between visuals and meaning. The visuals needed to feel expressive without being confusing, and the interface had to stay simple while still feeling intentional and thoughtful.
